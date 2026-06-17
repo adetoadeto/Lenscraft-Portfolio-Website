@@ -1,0 +1,79 @@
+.card {
+    background-size: cover;
+    background-position: top 15% center;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: soft-light;
+    border-radius: var(--border-radius-lg);
+    height: 250px;
+    width: 20%;
+    padding: 1rem;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    border: 1px solid #d8a35e5e;
+    box-shadow: 3px 3px 8px rgba(59, 58, 58, 0.63);
+}
+
+.card:hover {
+    animation: 1.5s cardAnimate linear infinite;
+}
+
+.card h3 {
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.856);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.card p {
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.856);
+    font-size: 0.9rem;
+    color: var(--white-secondary);
+}
+
+.card button {
+    border: 1px solid var(--white-primary);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--white-primary);
+}
+
+.card:nth-child(1) {
+    background-image: url("@/assets/images/home/featured/portrait.png");
+}
+
+.card:nth-child(2) {
+    background-image: url("@/assets/images/home/featured/wedding.png");
+}
+
+.card:nth-child(3) {
+    background-image: url("@/assets/images/home/featured/family.png");
+}
+
+.card:nth-child(4) {
+    background-image: url("@/assets/images/home/featured/brand.png");
+}
+
+.card:nth-child(5) {
+    background-image: url("@/assets/images/home/featured/event.png");
+}
+
+@keyframes cardAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

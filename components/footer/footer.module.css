@@ -1,0 +1,50 @@
+.footer {
+    padding: var(--spacing);
+    margin-top: 1.5rem;
+}
+
+.footer>div {
+    display: flex;
+    gap: 4rem;
+    line-height: 2;
+}
+
+.footer>div>div {
+    width: 20%;
+}
+
+.footer>div>div:nth-child(1)>div:first-of-type {
+    line-height: normal;
+}
+
+.footer>div>div:nth-child(1) p {
+    margin-top: 1.2rem;
+    width: 80%;
+}
+
+.footer p,
+.footer a {
+    color: var(--white-secondary);
+}
+
+.footer h3 {
+    text-transform: uppercase;
+    font-family: var(--heading);
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+.footer>p {
+    border-top: 2px solid rgba(245, 245, 245, 0.082);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.footer .socials {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.4rem;
+}

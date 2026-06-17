@@ -1,0 +1,66 @@
+.card {
+    max-width: 450px;
+    width: fit-content;
+    padding: 1.5rem;
+    border-radius: var(--border-radius-lg);
+    border: 1px solid #f0c98a3b;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.164), 0 0 2px #f0c98a3b;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    background-color: var(--secondary-color);
+}
+
+.card p {
+    display: flex;
+    gap: 1rem;
+    line-height: 1.7;
+    color: var(--white-secondary);
+}
+
+.card>p i {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.card>div {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.card .profile {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    position: relative;
+}
+
+.card .profile img {
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--white-secondary);
+}
+
+.card .profile>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.card .profile>div strong {
+    font-weight: 500;
+}
+
+.card .profile>div span {
+    font-size: 0.95rem;
+    color: var(--white-secondary);
+}
+
+.review-stars {
+    height: 20px;
+    object-fit: contain;
+    width: fit-content;
+}

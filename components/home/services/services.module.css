@@ -1,0 +1,11 @@
+.services {
+    padding: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.services .cards {
+    display: flex;
+    gap: 1rem;
+}

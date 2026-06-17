@@ -1,0 +1,81 @@
+.portfolio-detail-header {
+    border-radius: var(--border-radius-md);
+    /* height: 550px; */
+    height: fit-content;
+    margin-top: 4rem;
+    display: flex;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/images/portfolio/portrait/banner.png");
+}
+
+.article {
+    width: 40%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.article>div:first-of-type {
+    text-transform: uppercase;
+    gap: 0.7rem;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.article>div:first-of-type a {
+    color: var(--accent-color);
+}
+
+.article h2 {
+    letter-spacing: 2px;
+    font-family: var(--heading);
+    font-size: 3.8rem;
+    font-weight: 500;
+}
+
+.article hr {
+    width: 45px;
+    border: 1.5px solid var(--accent-color);
+}
+
+.article>p {
+    line-height: 2;
+    color: var(--white-secondary);
+    width: 75%;
+}
+
+.article>div:first-of-type,
+.info>div {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info>div {
+    gap: 1rem;
+}
+
+.info>div i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.info>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.info>div>div>span:last-of-type {
+    color: var(--white-muted);
+}

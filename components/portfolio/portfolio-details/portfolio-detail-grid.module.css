@@ -1,0 +1,90 @@
+.portfolio-detail-grid>ul {
+    padding: 2rem 0;
+}
+
+.portfolio-detail-grid ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    text-transform: uppercase;
+}
+
+.portfolio-detail-grid select {
+    font: inherit;
+    background-color: transparent;
+    color: inherit;
+    text-transform: uppercase;
+    border: none;
+}
+
+.content {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+    gap: 1rem;
+}
+
+.content>div:nth-child(1),
+.content>div:nth-child(5) {
+    grid-row: span 3;
+}
+
+.content>div:nth-child(2) {
+    grid-row: span 4;
+}
+
+.content>div:nth-child(3),
+.content>div:nth-child(4),
+.content>div:nth-child(6),
+.content>div:nth-child(7) {
+    grid-row: span 2;
+}
+
+.content img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: var(--border-radius-md);
+}
+
+.book {
+    margin: 1.5rem 0 0;
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem 2.3rem 1.2rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.041);
+    border: 1px solid rgba(255, 255, 255, 0.041)
+}
+
+.book,
+.book>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book>div {
+    gap: 1.5rem;
+}
+
+.book>div i {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.book>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.book>div>div p {
+    font-family: var(--heading);
+    font-size: 1.5rem;
+}
+
+.book>div>div span {
+    color: var(--white-secondary);
+}

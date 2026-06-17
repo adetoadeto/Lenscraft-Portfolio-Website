@@ -1,0 +1,4 @@
+.portfolio-details {
+    min-height: 100vh;
+    padding: var(--spacing);
+}

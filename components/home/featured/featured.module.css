@@ -1,0 +1,29 @@
+.featured {
+    padding: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.featured ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.featured ul li {
+    border-radius: var(--border-radius-md);
+    padding: 8px 25px;
+}
+
+.featured ul li.active,
+.featured ul li:hover {
+    background: var(--gradient);
+}
+
+.featured .cards {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

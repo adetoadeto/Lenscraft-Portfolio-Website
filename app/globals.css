@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --heading: "Cormorant Garamond", serif;
+  --body: "Montserrat", sans-serif;
+  --bg-color: #0B0D0E;
+  --secondary-color: #15191B;
+  --accent-color: #D8A45E;
+  --highlight-color: #F0C98A;
+  --white-primary: #FFFFFF;
+  --white-secondary: #C7C7C7;
+  --white-muted: #8A8F94;
+  --font-size: 1rem;
+  /* --gradient: linear-gradient(135deg,#D5A76A,#A87545); */
+  --gradient: linear-gradient(-215deg, #D8A45E 30%, #F0C98A);
+  --spacing: 2rem 4rem;
+  --border-radius-sm: 7px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: var(--body);
+  font-size: var(--font-size);
+  background-color: var(--bg-color);
+  color: var(--white-primary);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-primary);
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+}
+
+h2 {
+  font-size: calc(var(--font-size) * 2.5);
+}
+
+hr {
+  width: 40px;
+  border-color: var(--highlight-color)
+}
+
+.not-found {
+  min-height: 100vh;
+}
+
+.not-found__hero {
+  height: 650px;
+  background-image: url("../assets/images/not-found/banner.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.not-found__hero>div {
+  margin-top: 6rem;
+  width: 40%;
+}
+
+.not-found__hero article {
+  width: 65%;
+}
+
+.not-found__hero article h2 {
+  font-size: 8.5rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  font-family: var(--heading);
+}
+
+.not-found__hero article p:first-of-type {
+  font-size: 2.7rem;
+  font-family: var(--heading);
+}
+
+.not-found__hero article hr {
+  margin: 1.5rem 0;
+}
+
+.not-found__hero article p:last-of-type {
+  color: var(--white-secondary);
+  line-height: 2;
+}
+
+.not-found__hero>div>div,
+.not-found__hero>div>div button a {
+  display: flex;
+  align-items: center;
+}
+
+.not-found__hero>div>div {
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.not-found__hero>div>div button a {
+  gap: 0.8rem;
+}
+
+.not-found__hero>div>div button:last-of-type {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.363);
+  background-color: var(--bg-color);
+}

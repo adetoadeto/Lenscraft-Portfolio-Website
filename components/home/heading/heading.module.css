@@ -1,0 +1,11 @@
+.heading span {
+    color: var(--highlight-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.heading h2 {
+    margin-top: 0.2rem;
+    font-weight: 500;
+}
