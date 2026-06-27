@@ -1,0 +1,110 @@
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.contact,
+.time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact>div,
+.time>div {
+    width: 100%;
+}
+
+.socials>div {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.socials>div>div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.socials>div>div input[type="radio"] {
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--white-muted);
+    border-radius: 50%;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-grid;
+    place-content: center;
+}
+
+.socials>div>div input[type="radio"]:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.socials>div>div input[type="radio"]:checked {
+    border-color: var(--accent-color);
+}
+
+.socials>div>div label {
+    color: var(--white-muted);
+}
+
+.socials>div>div label,
+.socials>div>div input {
+    margin: 0;
+}
+
+.agreement {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.agreement a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.agreement input {
+    margin: 0;
+    accent-color: var(--accent-color);
+    height: 20px;
+    width: 20px;
+}
+
+.agreement p {
+    color: var(--white-secondary);
+}
+
+.personal-info>button {
+    background: var(--gradient);
+}
+
+.personal-info>button:hover {
+    text-decoration: underline;
+    background: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+    .socials>div {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+}

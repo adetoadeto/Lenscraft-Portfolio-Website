@@ -1,4 +1,11 @@
 .portfolio-details {
     min-height: 100vh;
-    padding: var(--spacing);
+    padding: var(--spacing-y) var(--spacing-x);
+}
+
+@media (max-width: 1024px) {
+    .portfolio-details {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }

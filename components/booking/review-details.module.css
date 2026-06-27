@@ -1,0 +1,153 @@
+.review-details>div,
+.review-details>div>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-details>div {
+    gap: 1rem;
+    border-radius: var(--border-radius-md);
+    padding: 25px 25px;
+    background-color: rgba(80, 79, 79, 0.116);
+    border: 1px solid rgba(255, 255, 255, 0.062);
+}
+
+.review-details>div>div:first-of-type {
+    gap: 2rem;
+}
+
+.review-details>div>div:first-of-type i {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+.review-details>div>div:first-of-type>div,
+.session-details-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--white-secondary);
+}
+
+.review-details>div>div:first-of-type>div strong {
+    color: var(--white-primary);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.review-details>div>div:last-of-type {
+    gap: 0.5rem;
+    color: var(--accent-color);
+}
+
+.review-details>div>div:last-of-type:hover {
+    cursor: pointer;
+    color: var(--highlight-color);
+    text-decoration: underline;
+}
+
+.review-details>div>div:last-of-type i {
+    font-size: 1.2rem;
+}
+
+.session-details,
+.buttons {
+    margin-top: 2rem;
+}
+
+.session-details-info {
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.session-details-info>div {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+.session-details>div>div>div span {
+    width: 50%;
+    display: block;
+    color: var(--white-primary);
+    line-height: 1.5;
+}
+
+.session-details>div>div>div p {
+    width: 50%;
+    line-height: 1.5;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.buttons button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons button:hover {
+    text-decoration: underline;
+}
+
+.buttons button:first-of-type {
+    background-color: transparent;
+    border: 1px solid var(--white-muted);
+}
+
+.buttons button:last-of-type {
+    background: var(--accent-color);
+}
+
+@media (max-width: 1024px) {
+    .review-details>div {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .review-details>div>div:first-of-type {
+        flex-wrap: wrap;
+    }
+
+    .session-details {
+        gap: 2rem;
+    }
+
+    .session-details-info>div {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .session-details>div>div>div span,
+    .session-details>div>div>div p {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-wrap: wrap;
+    }
+}

@@ -1,9 +1,10 @@
 import Button from "@/components/button/button";
+import classes from "@/components/not-found.module.css"
 
 export default function NotFound() {
     return (
-        <section className="not-found">
-            <div className="not-found__hero">
+        <section className={classes["not-found"]}>
+            <div className={classes["not-found__hero"]}>
                 <div>
                     <article>
                         <h2>404</h2>

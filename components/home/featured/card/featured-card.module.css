@@ -60,6 +60,9 @@
     background-image: url("@/assets/images/home/featured/event.png");
 }
 
+@media (max-width: 1024px) {
+   .card {width: auto;}
+}
 @keyframes cardAnimate {
     0% {
         transform: rotate(0deg);

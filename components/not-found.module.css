@@ -1,0 +1,92 @@
+.not-found {
+    min-height: 100vh;
+}
+
+.not-found__hero {
+    min-height: 100vh;
+    height: fit-content;
+    background-image: url("../assets/images/not-found/banner.png");
+    background-color: rgba(0, 0, 0, 0.212);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.not-found__hero>div {
+    margin-top: 6rem;
+    width: 40%;
+}
+
+.not-found__hero article {
+    width: 65%;
+}
+
+.not-found__hero article h2 {
+    font-size: 8.5rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    font-family: var(--heading);
+}
+
+.not-found__hero article p:first-of-type {
+    font-size: 2.7rem;
+    font-family: var(--heading);
+}
+
+.not-found__hero article hr {
+    margin: 1.5rem 0;
+}
+
+.not-found__hero article p:last-of-type {
+    color: var(--white-secondary);
+    line-height: 2;
+}
+
+.not-found__hero>div>div,
+.not-found__hero>div>div button a {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.not-found__hero>div>div {
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.not-found__hero>div>div button a {
+    gap: 0.8rem;
+}
+
+.not-found__hero>div>div button:last-of-type {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.363);
+    background-color: var(--bg-color);
+}
+
+@media (max-width: 1280px) {
+    .not-found__hero>div {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .not-found__hero {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .not-found__hero>div {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .not-found__hero>div {
+        width: 100%;
+    }
+}

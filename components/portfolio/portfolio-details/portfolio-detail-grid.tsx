@@ -1,39 +1,39 @@
 import Image from "next/image"
+import Button from "@/components/button/button"
 
 import classes from "./portfolio-detail-grid.module.css"
 
-import img1 from "../../../assets/images/portfolio/portrait/img1.png"
-import img2 from "../../../assets/images/portfolio/portrait/img2.png"
-import img3 from "../../../assets/images/portfolio/portrait/img3.png"
-import img4 from "../../../assets/images/portfolio/portrait/img4.png"
-import img5 from "../../../assets/images/portfolio/portrait/img5.png"
-import img6 from "../../../assets/images/portfolio/portrait/img6.png"
-import img7 from "../../../assets/images/portfolio/portrait/img7.png"
-import Button from "@/components/button/button"
-
 const heading = ["All", "Individual", "Professional", "Creative", "Black & White"]
-const sortBy = ["Latest", "Male", "Female"]
-const images = [img1, img2, img3, img4, img5, img6, img7]
 
-export default function PortfolioDetailGrid() {
+type GalleryItem = {
+    src: string;
+    width: number;
+    height: number;
+};
+
+type PortfolioDetailGridProps = {
+    gallery: GalleryItem[];
+};
+
+export default function PortfolioDetailGrid({ gallery }: PortfolioDetailGridProps) {
     return (
         <div className={classes["portfolio-detail-grid"]}>
             <ul>
                 <ul>
                     {heading.map(item => <li key={item}>{item}</li>)}
                 </ul>
-                <li>
+                {/* <li>
                     <span>Sort By:</span>
                     <select name="sortBy" id="sortBy">
                         {sortBy.map(item => <option key={item} value={item}>{item}</option>)}
                     </select>
-                </li>
+                </li> */}
             </ul>
 
             <div className={classes.content}>
-                {images.map((item, index) =>
+                {gallery.map((item, index) =>
                     <div key={index} className={classes[`item-${index}`]}>
-                        <Image src={item} alt="portrait image of a person" />
+                        <Image src={item.src} width={item.width} height={item.height} alt="portrait image of a person" />
                     </div>)}
             </div>
 

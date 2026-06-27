@@ -1,0 +1,187 @@
+.booking-success {
+    min-height: 100vh;
+    padding: 7rem var(--spacing-x);
+    background-image: url("../assets/images/home/hero/hero1_portrait.png");
+    background-position: top 10% left;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.content {
+    margin: auto;
+    background-color: #15191be7;
+    width: 75%;
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.151);
+    transform: scale(0);
+    animation: scaling 1s linear forwards;
+}
+
+.content p {
+    color: var(--white-muted);
+    line-height: 2;
+}
+
+.content>div:first-of-type {
+    width: 80%;
+    margin: auto;
+}
+
+.content>div:first-of-type i {
+    font-size: 3.5rem;
+    color: var(--accent-color);
+}
+
+.content>div:first-of-type h2 {
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+}
+
+.content>div:nth-child(2) {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.content>div:nth-child(2)>div {
+    display: flex;
+    text-align: start;
+    align-items: start;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+}
+
+.content>div:nth-child(2)>div:nth-child(1) {
+    border-right: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.content>div:nth-child(2)>div p {
+    margin-top: 0.5rem;
+}
+
+.content>div:nth-child(2)>div i,
+.content>div:nth-child(2)>div h3 {
+    color: var(--accent-color);
+}
+
+.content>div:nth-child(2)>div i {
+    font-size: 1.9rem;
+}
+
+.content>div:nth-child(2)>div h3 {
+    font-weight: 500;
+}
+
+.content>div:last-of-type,
+.content>div:last-of-type>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content>div:last-of-type {
+    gap: 4rem;
+    border: 1px solid rgba(255, 255, 255, 0.048);
+    background-color: rgba(49, 49, 49, 0.274);
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius-md);
+}
+
+.content>div:last-of-type i {
+    font-size: 1.7rem;
+}
+
+.content>div:last-of-type>div:first-of-type {
+    gap: 1.5rem;
+    width: 60%;
+    text-align: start;
+}
+
+.content>div:last-of-type>div:first-of-type p {
+    line-height: 1.5;
+}
+
+.content>div:last-of-type>div:first-of-type i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius-sm);
+    padding: 0.5rem 1.5rem;
+    color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.103);
+}
+
+.content>div:last-of-type>div:last-of-type {
+    gap: 1rem;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1024px) {
+    .booking-success {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content>div:first-of-type {
+        width: 100%;
+    }
+
+    .content>div:first-of-type h2 {
+        margin: 2rem 0;
+    }
+
+    .content>div:first-of-type p {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content>div:nth-child(2),
+    .content>div:nth-child(2)>div,
+    .content>div:last-of-type,
+    .content>div:last-of-type>div {
+        flex-wrap: wrap;
+    }
+
+    .content>div:nth-child(2) {
+        border-left: 1px solid rgba(255, 255, 255, 0.075);
+        border-right: 1px solid rgba(255, 255, 255, 0.075);
+    }
+
+    .content>div:nth-child(2)>div {
+        padding: 1.5rem 2rem;
+    }
+
+    .content>div:nth-child(2)>div:nth-child(1) {
+        border: none;
+    }
+
+    .content>div:last-of-type {
+        gap: 3rem;
+    }
+
+    .content>div:last-of-type>div:first-of-type {
+        width: 100%;
+    }
+}

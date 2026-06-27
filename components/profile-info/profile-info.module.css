@@ -1,0 +1,28 @@
+.profile {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.profile img {
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--white-secondary);
+}
+
+.profile>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.profile>div strong {
+    font-weight: 500;
+}
+
+.profile>div span {
+    font-size: 0.95rem;
+    color: var(--white-secondary);
+}

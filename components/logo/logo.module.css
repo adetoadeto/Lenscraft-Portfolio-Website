@@ -7,6 +7,10 @@
     text-transform: uppercase;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .logo span:first-of-type {
     font-weight: 500;
     font-family: var(--heading);
@@ -17,4 +21,10 @@
     letter-spacing: 7px;
     font-weight: 300;
     color: var(--white-secondary);
+}
+
+@media (max-width:1024px) {
+    .logo span:last-of-type {
+        color: var(--white-primary);
+    }
 }

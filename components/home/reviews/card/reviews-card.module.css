@@ -25,38 +25,10 @@
 
 .card>div {
     display: flex;
+    flex-wrap: wrap;
     align-items: end;
+    gap: 1rem;
     justify-content: space-between;
-}
-
-.card .profile {
-    display: flex;
-    gap: 1.2rem;
-    align-items: center;
-    position: relative;
-}
-
-.card .profile img {
-    height: 47px;
-    width: 47px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--white-secondary);
-}
-
-.card .profile>div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
-.card .profile>div strong {
-    font-weight: 500;
-}
-
-.card .profile>div span {
-    font-size: 0.95rem;
-    color: var(--white-secondary);
 }
 
 .review-stars {

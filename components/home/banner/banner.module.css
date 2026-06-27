@@ -1,12 +1,7 @@
 .banner {
-    margin-top: 1.5rem;
     height: 280px;
-    padding: var(--spacing);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    margin: 1.5rem 0 3rem;
+    padding: var(--spacing-y) var(--spacing-x);
     background-image:
         url("@/assets/images/home/banner/baby.png"),
         url("@/assets/images/home/banner/brand.png"),
@@ -16,9 +11,25 @@
     background-position: 0% top, 25% top, 50% top, 75% top, 100% top;
     background-repeat: no-repeat;
     background-size: 20% 100%, 20% 100%, 20% 100%, 20% 100%, 20% 100%;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.55);
     background-blend-mode: overlay;
     animation: bannerAnime 10s linear infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.banner h2,
+.banner p {
+    text-shadow: 0 0 10px black;
+}
+
+.banner p {
+    line-height: 1.5;
+    width: 60%;
 }
 
 .banner>i {
@@ -80,5 +91,23 @@
             url("@/assets/images/home/banner/trad1.png"),
             url("@/assets/images/home/banner/brand.png"),
             url("@/assets/images/home/banner/baby.png");
+    }
+}
+
+@media (max-width:1024px) {
+    .banner {
+        height: fit-content;
+        background-image: url("@/assets/images/home/banner/trad1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: none;
+    }
+}
+
+@media (max-width:1024px) {
+    .banner {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }

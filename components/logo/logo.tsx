@@ -1,10 +1,11 @@
+import Link from "next/link"
 import classes from "./logo.module.css"
 
 export default function Logo () {
     return (
-        <div className={classes.logo}>
+        <Link href="/" className={classes.logo}>
             <span>lenscraft</span>
             <span>photography</span>
-        </div>
+        </Link>
     )
 }

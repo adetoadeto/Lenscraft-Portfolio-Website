@@ -26,3 +26,10 @@
     margin-top: 0.8rem;
     color: var(--white-secondary);
 }
+
+@media (max-width: 1024px) {
+    .card {
+        height: fit-content;
+        width: auto;
+    }
+}

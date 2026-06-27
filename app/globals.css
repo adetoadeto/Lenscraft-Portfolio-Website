@@ -13,7 +13,8 @@
   --font-size: 1rem;
   /* --gradient: linear-gradient(135deg,#D5A76A,#A87545); */
   --gradient: linear-gradient(-215deg, #D8A45E 30%, #F0C98A);
-  --spacing: 2rem 4rem;
+  --spacing-y: 2rem;
+  --spacing-x: 3rem;
   --border-radius-sm: 7px;
   --border-radius-md: 10px;
   --border-radius-lg: 15px;
@@ -36,6 +37,10 @@ body {
   font-size: var(--font-size);
   background-color: var(--bg-color);
   color: var(--white-primary);
+}
+
+button:hover, a:hover {
+  cursor: pointer;
 }
 
 li {
@@ -61,67 +66,45 @@ hr {
   border-color: var(--highlight-color)
 }
 
-.not-found {
-  min-height: 100vh;
+label {
+  display: block;
+  font-size: 0.9rem;
 }
 
-.not-found__hero {
-  height: 650px;
-  background-image: url("../assets/images/not-found/banner.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  padding: 0 4rem;
+label span {
+  color: orange;
 }
 
-.not-found__hero>div {
-  margin-top: 6rem;
-  width: 40%;
+input,
+select,
+textarea {
+  width: 100%;
+  margin-top: 0.8rem;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: rgba(34, 34, 34, 0.247);
+  border: 1px solid rgba(255, 255, 255, 0.062);
+  box-shadow: 0 0 4px rgba(235, 229, 229, 0.068);
 }
 
-.not-found__hero article {
-  width: 65%;
+input[type="checkbox"],
+input[type="radio"] {
+  width: fit-content;
 }
 
-.not-found__hero article h2 {
-  font-size: 8.5rem;
-  font-weight: 500;
-  color: var(--accent-color);
-  font-family: var(--heading);
+input,
+select,
+input::placeholder,
+textarea {
+  font-family: var(--body);
+  color: var(--white-muted);
 }
 
-.not-found__hero article p:first-of-type {
-  font-size: 2.7rem;
-  font-family: var(--heading);
+input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  font-size: 1rem;
 }
 
-.not-found__hero article hr {
-  margin: 1.5rem 0;
-}
-
-.not-found__hero article p:last-of-type {
-  color: var(--white-secondary);
-  line-height: 2;
-}
-
-.not-found__hero>div>div,
-.not-found__hero>div>div button a {
-  display: flex;
-  align-items: center;
-}
-
-.not-found__hero>div>div {
-  margin-top: 1.5rem;
-  gap: 1rem;
-}
-
-.not-found__hero>div>div button a {
-  gap: 0.8rem;
-}
-
-.not-found__hero>div>div button:last-of-type {
-  background: none;
-  border: 1px solid rgba(255, 255, 255, 0.363);
-  background-color: var(--bg-color);
+select option {
+  background-color: var(--secondary-color);
 }

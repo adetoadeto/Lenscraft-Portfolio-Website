@@ -1,8 +1,10 @@
 .hero {
+    min-height: fit-content;
     height: 700px;
-    padding: var(--spacing);
+    padding: 10rem var(--spacing-x) var(--spacing-y);
     background-image: url("@/assets/images/home/hero/hero1.png");
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.55);
+    background-size: cover;
     background-position: center;
     background-blend-mode: darken;
     animation: 15s bgAnimate linear infinite;
@@ -17,40 +19,60 @@
     gap: 1rem;
 }
 
-.content > span {
+.content>span {
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.content h1 { 
-    font-size: calc(var(--font-size) * 4);
+.content h1 {
+    font-size: calc(var(--font-size) * 4.1);
     font-weight: normal;
 }
 
-.content > span,
-.content h1 > span {
-    background: var(--gradient);
+.content>span,
+.content h1>span {
+    /* background: var(--gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    color: transparent;
+    color: transparent; */
+    color: var(--highlight-color);
 }
 
-.content > p {
+.content>p {
     color: var(--white-secondary);
     width: 80%;
     line-height: 2;
 }
 
-.content > button {
+.content>button {
     margin-top: 1rem;
 }
-.content > button a {
+
+.content>button a {
     display: flex;
     align-items: center;
     gap: 1.3rem;
 }
 
+@media (max-width: 1024px) {
+    .hero {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 100%;
+    }
+    .content > p {
+        width: 100%;
+    }
+    .content > button {
+        width: 100%;
+    }
+}
 
 @keyframes bgAnimate {
     0% {

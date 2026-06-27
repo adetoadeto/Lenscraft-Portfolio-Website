@@ -7,7 +7,7 @@ export default function Hero() {
         <section className={classes.hero}>
             <div className={classes.content}>
                  <span>Hi, I'm Alex Morgan</span>
-            <h1>Capturing Moments That Last <span>Forever</span>
+            <h1>Capturing <span>Moments</span> That Last <span>Forever</span>
             </h1>
             <hr />
             <p>I'm a passionate photographer based in San Francisco. I specialize in capturing real emotions, timeless moments, and stunning visual stories</p>

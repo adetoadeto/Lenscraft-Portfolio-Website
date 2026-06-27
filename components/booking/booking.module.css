@@ -1,0 +1,131 @@
+.booking {
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 4rem;
+    padding: 6rem var(--spacing-x) 2rem;
+    background-image: url("@/assets/images/home/hero/hero1_portrait.png");
+    background-color: rgba(0, 0, 0, 0.616);
+    background-blend-mode: overlay;
+    background-size: 55%;
+    background-position: left top 20%;
+    background-repeat: no-repeat;
+}
+
+.booking aside {
+    min-height: 100vh;
+    width: 40%;
+}
+
+.content h2 {
+    font-size: 3.4rem;
+    font-weight: 500;
+}
+
+.content hr {
+    margin: 2rem 0;
+}
+
+.content p {
+    color: var(--white-secondary);
+    line-height: 1.9;
+}
+
+.content>p,
+.icons p {
+    width: 80%;
+}
+
+.icons {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.icon {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon i {
+    font-size: 2rem;
+    padding: 0.65rem 1.7rem;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #d8a35e42;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: #d8a35ed3;
+    box-shadow: 0 0 10px #d8a35e42;
+
+}
+
+.text strong {
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.text p {
+    font-size: 0.95rem;
+}
+
+.reviews {
+    border: 1px solid #d8a35e36;
+    border-radius: var(--border-radius-md);
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    background-color: rgba(24, 24, 24, 0.616);
+    box-shadow: 0 0 10px #d8a35e42;
+}
+
+.reviews>p>span {
+    margin: 0 0.5rem;
+}
+
+.reviews>div {
+    margin-top: 0.8rem;
+}
+
+.reviews i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+    .booking {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.815);
+    }
+}
+
+@media (max-width: 768px) {
+    .booking {
+        flex-direction: column-reverse;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .booking aside {
+        width: 100%;
+        border: 1px dashed var(--highlight-color);
+        padding: 1rem;
+        border-radius: var(--border-radius-md);
+
+    }
+
+    .content>p,
+    .icons p {
+        width: 100%;
+    }
+
+
+}

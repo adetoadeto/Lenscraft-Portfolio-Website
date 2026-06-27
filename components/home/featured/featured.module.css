@@ -1,18 +1,19 @@
 .featured {
-    padding: var(--spacing);
+    padding: var(--spacing-y) var(--spacing-x);
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-
 .featured ul {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem
 }
 
 .featured ul li {
+    border: 1px solid var(--accent-color);
     border-radius: var(--border-radius-md);
     padding: 8px 25px;
 }
@@ -26,4 +27,17 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .featured {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .featured .cards {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }

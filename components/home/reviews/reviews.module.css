@@ -1,5 +1,5 @@
 .reviews {
-     padding: var(--spacing);
+     padding: var(--spacing-y) var(--spacing-x);
 }
 
 .cards {
@@ -7,4 +7,17 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .reviews {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .reviews .cards {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
 }

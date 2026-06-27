@@ -3,8 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
     text-transform: uppercase;
-    padding: 1.5rem 4rem;
+    padding: 1rem var(--spacing-x);
     position: absolute;
     z-index: 100;
     /* background-color: rgba(0, 0, 0, 0.822); add color on scroll*/
@@ -14,4 +15,102 @@
     display: flex;
     align-items: center;
     gap: 3rem;
+}
+
+.nav>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav i {
+    display: none;
+    font-size: 2.5rem;
+}
+
+.aside {
+    position: fixed;
+    z-index: 10000;
+    height: 100vh;
+    width: 300px;
+    top: 95px;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.966);
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: none;
+    animation: slide-in 0.8s ease-in-out;
+}
+
+.aside ul {
+    line-height: 3.5;
+    text-align: center;
+}
+
+.aside ul li a {
+    color: var(--accent-color);
+}
+
+.aside ul li a:hover {
+    text-decoration: underline 4px;
+}
+
+.aside button {
+    line-height: normal;
+    width: 100%;
+}
+
+@keyframes slide-in {
+    from {
+        translate: 100% 0;
+    }
+
+    to {
+        transform: 0 0;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        position: fixed;
+        background-color: var(--accent-color);
+        padding: 1rem 2rem;
+    }
+
+    .nav button {
+        border: 1px solid rgba(255, 255, 255, 0.342);
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav i, .show {
+        display: block;
+    }
+    .show {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width:480px) and (max-width: 1024px) {
+    .aside {
+        top: 77px;
+    }
+
+    .aside button {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav button {
+        display: none;
+    }
+
+    .aside {
+        top: 75px;
+    }
 }
