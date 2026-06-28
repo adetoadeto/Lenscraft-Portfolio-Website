@@ -7,8 +7,9 @@ A modern, responsive photography portfolio website designed to showcase professi
 ## Table of Contents
 
 - Overview
+- Website URL
+- Screenshot
 - Features
-- Screenshots
 - Technologies Used
 - Performance Optimizations
 - Accessibility
@@ -20,15 +21,17 @@ A modern, responsive photography portfolio website designed to showcase professi
 - Author
 - Acknowledgements
 
----
-
 # Overview
 
 This project is a professional photography portfolio website built to provide photographers with an elegant online presence. It showcases photography collections, featured works, services, client testimonials, and contact information in a visually engaging manner.
 
 The application is optimized for speed, SEO, accessibility, and user experience while maintaining a minimalist design that allows the photography to remain the primary focus.
 
-Live Link: (https://lenscraft-portfolio-website.vercel.app/)
+# Website URL
+https://lenscraft-portfolio-website.vercel.app/
+
+# Screenshot
+![Website preview](<screenshot.png>)
 
 # Features
 
@@ -66,9 +69,6 @@ Live Link: (https://lenscraft-portfolio-website.vercel.app/)
 - Interactive navigation
 - Responsive menu
 - Fast image loading
-
-# Screenshots
-![Website preview](<screenshot.png>)
 
 # Technologies Used
 
